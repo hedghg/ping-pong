@@ -91,10 +91,10 @@ function update() {
     }
 
     if (ball.y - ball.radius < 0) {
-        player.score++;
+        ai.score++;
         resetBall();
     } else if (ball.y + ball.radius > canvas.height) {
-        ai.score++;
+        player.score++;
         resetBall();
     }
 }
